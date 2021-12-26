@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: 'Montserrat', 'Avenir', Helvetica, Arial, sans-serif;
+  background: #F2F2F2;
+  color: #343845;
+}
+
+p, h1, h2, ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+textarea,
+button {
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  padding: 0;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type="password"] {
+  font-family: monospace;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

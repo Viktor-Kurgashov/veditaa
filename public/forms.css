@@ -1,0 +1,199 @@
+.app-form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 28px min(24px, 6%);
+  border-radius: 6px;
+  background: white;
+}
+
+
+
+.form-field__warning,
+.form-checkbox__label,
+.form-checkbox__warning {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.form-field__warning,
+.form-checkbox__warning {
+  padding: 0 5px;
+  color: #EE5173;
+}
+
+.form-header {
+  align-self: center;
+}
+
+.form-text {
+  text-align: center;
+  margin-top: 22px;
+}
+
+
+
+.form-field {
+  margin-top: 22px;
+}
+
+.form-field__label {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 7px;
+  margin-bottom: 12px;
+}
+
+.form-field__label::after {
+  content: " *";
+  color: #EE5173;
+}
+
+.form-field__warning {
+  margin-top: 10px;
+}
+
+
+
+._input-theme {
+  box-shadow: 0 0 1px 1px lightgray;
+  border-radius: 5px;
+}
+
+.form-field__input {
+  height: 45px;
+  padding: 0 14px;
+}
+
+.form-field__textarea {
+  padding: 12px 14px;
+  line-height: 21px;
+  resize: none;
+}
+
+.form-field__input:focus,
+.form-field__textarea:focus {
+  box-shadow: 0 0 4px 1px #4F8CFF;
+}
+
+.form-field__input_error,
+.form-field__input_error:focus {
+  box-shadow: 0 0 4px 1px #EE5173;
+}
+
+
+
+.form-password {
+  position: relative;
+}
+
+.form-password__switch {
+  background: url('icons/pw-show.svg') no-repeat center;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 28px;
+}
+
+.form-password__switch_visible {
+  background-image: url('icons/pw-hide.svg');
+}
+
+
+
+.form-checkbox {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 10px 14px;
+  position: relative;
+  margin-top: 28px;
+}
+
+.form-checkbox__field {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  box-shadow: 0 0 1px 1px lightgray; 
+}
+
+.form-checkbox__label {
+  max-width: calc(100% - 30px);
+}
+
+.form-checkbox__warning {
+  flex-basis: 100%;
+}
+
+
+
+.form-checkbox__removed:checked + .form-checkbox__field {
+  background: url('icons/checkmark.svg') no-repeat center;
+  background-size: 13px;
+}
+
+.form-checkbox__removed:focus + .form-checkbox__field {
+  box-shadow: 0 0 4px 2px #4F8CFF;
+}
+
+.form-checkbox__removed + .form-checkbox_error,
+.form-checkbox__removed:focus + .form-checkbox_error {
+  box-shadow: 0 0 4px 2px #EE5173;
+}
+
+
+
+.app-btn {
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 36px;
+  background: #EE5173;
+  border-radius: 5px;
+  color: white;
+}
+
+.app-btn:active {
+  background: #EC476B;
+}
+
+.form-link {
+  align-self: center;
+  padding: 5px 20px;
+  margin-top: 14px;
+  color: #4F8CFF;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .app-form {
+    max-width: 525px;
+    padding: 33px 30px;
+  }
+
+  .form-field,
+  .form-text {
+    margin-top: 28px;
+  }
+
+  .form-checkbox {
+    margin-top: 32px;
+  }
+
+  .app-btn {
+    height: 50px;
+    font-size: 18px;
+    line-height: 52px;
+    margin-top: 40px;
+  }
+
+  .form-link {
+    margin-top: 18px;
+  }
+}
